@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="PROD">
     <contextParameter comment="" name="base64_encoded_string" prompt="base64_encoded_string?" promptNeeded="false" repositoryContextId="_b95ooHyHEe6StOwy5a2xxg" type="id_String" value=""/>
     <contextParameter comment="" name="environment" prompt="environment?" promptNeeded="false" repositoryContextId="_b95ooHyHEe6StOwy5a2xxg" type="id_String" value="PROD"/>
@@ -15,7 +15,7 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:1OUas5SV3X1wlKShembWBuHYyhqdPs0j5MT/bYVL8ozK"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:bG4NpwQSgprCsxqk/4hbiw0EgRf0NK/QOHZva4Bfateu"/>
   </context>
   <context confirmationNeeded="false" name="DEV">
     <contextParameter comment="" name="base64_encoded_string" prompt="base64_encoded_string?" promptNeeded="false" repositoryContextId="_b95ooHyHEe6StOwy5a2xxg" type="id_String" value=""/>
@@ -33,7 +33,7 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:P+r/IeeppPWA+ikNgGPzpGt66s2TGx3uQiV1AmVb87kN"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:QKQB0wv7se7yAEb6GFEVQggQbtZVdKlGf7gV6TlZdyyN"/>
   </context>
   <context confirmationNeeded="false" name="UAT">
     <contextParameter comment="" name="base64_encoded_string" prompt="base64_encoded_string?" promptNeeded="false" repositoryContextId="_b95ooHyHEe6StOwy5a2xxg" type="id_String" value=""/>
@@ -51,7 +51,7 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Jqm41zHIJIz9Im9HFKmcAnH8DqNS+XObCyDmu+UkBeut"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:T6WDNBVCMTH2LYCFOSyz3+mVKw+TKAKm+sdpXn4yTMyh"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -95,7 +95,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:DhHrqSn5HaWduF0Of6jUwgIxCF0pL6Mlno/LrFbB"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:af+1wPyHcL5WnMP0WprwP6jVwxyKtzdEuQ7p8mRc"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -130,7 +130,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:7gDHIWIetBPtTZeUsZFArxXbPuWkYxHJP3CuQBp7"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:slmAiOooE25Zute8Yr0gmwYi7yfDyFkmgsiedziE"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -159,6 +159,7 @@
     <routinesParameter id="_fAqncHiUEe6PrtgjjVgIhg" name="TalendDate"/>
     <routinesParameter id="_fA9iYHiUEe6PrtgjjVgIhg" name="TalendStringUtil"/>
     <routinesParameter id="_fA4p4HiUEe6PrtgjjVgIhg" name="TalendString"/>
+    <routinesParameter id="_KgM-gHyOEe6StOwy5a2xxg" name="Base64Converter"/>
   </parameters>
   <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
@@ -189,7 +190,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.talend_metadata_DB"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.additional_params"/>
     <elementParameter field="TEXT" name="USER" value="context.talend_metadata_login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:O0loHIMz32jEpVwDSV1YVcwnpb6FVCiRgR7wkOC9PsC9/uDNNJwYiJ94sjoZW2Q0Czd04ffjQgJP7g2w"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ix1WJ7t5la2Mqa8bcEp8DeClyyYJnPDQzdNb4ZGNKRb/5yA3xBgc25i2JOuBcrsDqKyZLrnUXUJcObRK"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -210,7 +211,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:C+7wr2mHDR/0nQFDqzr316GY6QcPcwOaH//U9oPG"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:TxPVXsVFO3aRDPNv8TkKkNUrvRX4+WFeN0fISKRa"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;talend_jobmapping&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -466,13 +467,43 @@
       <column comment="" key="false" length="-1" name="json" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="576" posY="480">
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="544" posY="480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMap_1"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_h00OIHyGEe6StOwy5a2xxg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
+    <elementParameter field="TEXT" name="JACCARD" show="false" value="0"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="-1" name="encoded_string" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables name="Var" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="routines.Base64Converter.covnertstring(row3.json) " name="encoded_string" type="id_String"/>
+      </varTables>
+      <outputTables name="out1" sizeState="INTERMEDIATE">
+        <mapperTableEntries expression="Var.encoded_string " name="encoded_string" type="id_String"/>
+      </outputTables>
+      <inputTables lookupMode="LOAD_ONCE" matchingMode="UNIQUE_MATCH" name="row3" sizeState="INTERMEDIATE">
+        <mapperTableEntries name="json" nullable="true" type="id_String"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="480">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaRow_2"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;String encoded_string = new String(org.apache.commons.codec.binary.Base64.encodeBase64(row3.json.getBytes())); &#10;context.base64_encoded_string = encoded_string;&#10;System.out.println(context.base64_encoded_string);"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//Code generated according to input schema and output schema&#13;&#10;context.base64_encoded_string = out1.encoded_string;&#10;System.out.println(context.base64_encoded_string);"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_2">
-      <column comment="" key="false" length="-1" name="json" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="encoded_string" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="640">
@@ -560,9 +591,13 @@
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
   </connection>
-  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tJavaRow_2">
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tWriteJSONField_1" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_1" target="tMap_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tJavaRow_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out1"/>
   </connection>
   <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tREST_1" offsetLabelX="0" offsetLabelY="0" source="tREST_1" target="tLogRow_1">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -626,13 +661,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b0470531-2001-4409-9b21-e880def355e2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4qT9oI2O7Sq/eWi3yAN27iZ9AYnctSj69JCzJoL941ROAxo4Rm0uUSdtgKSWgTh+RJpkXttgfJzz&#13;
-Mx4+NjWa0w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_043fc8dc-c72b-4f1e-b1bf-19b106ef57cb"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QFdIJLoMTpscWlK6LsAZdUrX5NswNY2Lro8BktQqfHTEroEB8+jS7CRicB3fswhPyl/dnYBKrkYN&#13;
-7T3Ct7jpLA==</DigestValue></Reference></SignedInfo><SignatureValue>d29ypPa1E4MrDqHS3J9S/B2wDiixOb/zUoi0Vounppvtjfzkw8vUm/Fwj8UX7LAr8ciqyB7A/HLP&#13;
-IUbUOqz09CsHFtC5pGntEtVljNxfaadqj8Sq2YadMwQls3SlW7ErytlXbj6HLNQygS53fWKMYxJV&#13;
-ISSXYHFSL/aB1lBcF85uDPcwPh11p4jM/53Xtru7Sb5LpIL/JMg2e5ZfDzM8+tL6qWujzB/gKiUQ&#13;
-MDGnQfqLabJmT3awwXzYGZcGkisAc7TtZNK55bIsvtgkx8vt3lN5u0G6UCnL4rS2oKzLQ/ZPtNtT&#13;
-XFb19kM/7Q03WDXjAsGuiQpZIJQCDAinuGLOAA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_7ec88a6f-e31d-44f8-86f7-7e62309c31d1"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>R8lLX84PiPAUfI7XA8a/xkD31N12P6TLwFFI1tN3XrBzBN812Tqr/Eqiqpe3F+mY4pSRKg3+13hn&#13;
+c5jxO91qqA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_50730b58-f833-43d8-a5df-28e339fbec70"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>bQzaQe+Zx9Qc1JGbVeetjNxW+emRJiBR0kBpQmMptIx2rcpV2dCDO89rQ5LUh2VdZsIbtBiy4RaF&#13;
+NuQjbFKoHw==</DigestValue></Reference></SignedInfo><SignatureValue>YqCA2alqMVjq/+V0AmEfhjs+G2HQIpPRtgwhVKeBFSCEEmrd81pMa5IaCRCvBRYEH52Z5WogXJwu&#13;
+W7Asc7Co26oHCUI7o/8oY9MNCYmC12AJF7elkOkzwg19gGhML1vK+G9MXNrUhXsY6hV3j6pIdBfa&#13;
+oV4UMS4Z2+UJTjDS0wiVVgsUScc8Jf1rv/wNa9NqfDDoNshIzXvmDLWjkxlHD7fRccozBNPLl7K8&#13;
+IJiV8EdMiXlcOhd2TCtPMAbGJpgI7tcievEwe5MnPskWOKHZH0dbemceRQCcl2t+wNdl8cheruRT&#13;
+IuFJv7E05V+fYVW0C5aoQTHpoZrzntFKL93iMQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -654,4 +689,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_043fc8dc-c72b-4f1e-b1bf-19b106ef57cb" Target="#_b0470531-2001-4409-9b21-e880def355e2"><Timestamp>2023-11-06 10:19:23</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_50730b58-f833-43d8-a5df-28e339fbec70" Target="#_7ec88a6f-e31d-44f8-86f7-7e62309c31d1"><Timestamp>2023-11-06 10:31:05</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
