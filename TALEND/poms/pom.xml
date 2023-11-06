@@ -14,6 +14,7 @@
     <module>jobs/process/generatejobzip_publishtotac_via_metaservleturl_0.1</module>
     <module>jobs/process/sj_dataloadtomysql_0.1</module>
     <module>jobs/process/createjson_0.1</module>
+    <module>jobs/process/metaservlet_job_deployment_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
