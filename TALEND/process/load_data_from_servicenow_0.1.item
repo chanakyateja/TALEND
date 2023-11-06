@@ -1,6 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="Default"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="DEV" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="PROD">
+    <contextParameter comment="" name="servicenow_password" prompt="servicenow_password?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_Password" value="enc:system.encryption.key.v1:KHvP5hWQjJjg17mcdwCdv1r0iaKhOTlpHI9wgt7CCuq06doL4gJ6sQ=="/>
+    <contextParameter comment="" name="servicenow_url" prompt="servicenow_url?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_String" value="https://dev123833.service-now.com"/>
+    <contextParameter comment="" name="servicenow_username" prompt="servicenow_username?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV">
+    <contextParameter comment="" name="servicenow_password" prompt="servicenow_password?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_Password" value="enc:system.encryption.key.v1:oJwZyrHbXt21hUuJMtfPwJOADcP1vJkgQJVoQraAeWht5ABIx2hbrA=="/>
+    <contextParameter comment="" name="servicenow_url" prompt="servicenow_url?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_String" value="https://dev123833.service-now.com"/>
+    <contextParameter comment="" name="servicenow_username" prompt="servicenow_username?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_String" value="admin"/>
+  </context>
+  <context confirmationNeeded="false" name="UAT">
+    <contextParameter comment="" name="servicenow_password" prompt="servicenow_password?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_Password" value="enc:system.encryption.key.v1:+l+vQcAK6uQoENYSyGKmrMfOaY7tFU0e9qurn16xtmFl217qKpXyUA=="/>
+    <contextParameter comment="" name="servicenow_url" prompt="servicenow_url?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_String" value="https://dev123833.service-now.com"/>
+    <contextParameter comment="" name="servicenow_username" prompt="servicenow_username?" promptNeeded="false" repositoryContextId="_q7VrwHycEe6StOwy5a2xxg" type="id_String" value="admin"/>
+  </context>
   <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="64"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -40,7 +56,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:7J668OTlN1RLyr18E6Asr/ByieZJELWD9ehfV0SE"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NYptApwviStC3CXLTRDkI6FOacsdbYkGq8bgLvdU"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -75,7 +91,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:WcI7tYmAtoPTFwLaoYoNwjnapHFxSVde4mtteYNx"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:W1cKWsvfEdfM5IgSi48ZaZzPXtmktamgPuDxAM0H"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -105,13 +121,55 @@
     <routinesParameter id="_fA9iYHiUEe6PrtgjjVgIhg" name="TalendStringUtil"/>
     <routinesParameter id="_fA4p4HiUEe6PrtgjjVgIhg" name="TalendString"/>
   </parameters>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_dd08d2f4-4546-42cc-a89d-d8a0c0446c17"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>QCtVBd3W5AY6AT1GrX6E3nM1LLk6AMeuDGedQqYQJOOH/SYFS4DnA8Klxd7qABNfnJZTEUc/lVOc&#13;
-We8FTBtbTA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_c2e5c1dd-047c-465a-bd4e-be6e2927e9dd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>C8MTaM5aALEieN4TAVapxfNbKC5U/PeSxeZ/YIqu6E02BhrBhNFgrErxUGsZC0xwK+1WHpAQlzdJ&#13;
-I0+3zxXFZw==</DigestValue></Reference></SignedInfo><SignatureValue>n3Ho8Gk+nADvVk/E9jF2hG9AQgL+AAIOKJOwJOTUCGqoKWbhqiRQcm4uVdanLrIymEIYFNDAOreJ&#13;
-nAdlYjyM7V9ftyKU853ewAN7mUE1F1Evq0p7Zc11PtYgsEPjLtoLDv3oAaduh6lOsP+5S6C9ghOh&#13;
-ZZnccHcHO/rvcuBpFwUjOI5sO0dQs+h4m/mKpfcuKOBQrqWl/rtJdSs+EBSQg8ldRtWcKMmmaVtF&#13;
-RIh1sG4JLgJ3aj6myTXYP+cYZSpGF9FqSMG2hYmVgi71QWX/CEMQoMg4egEP3G+adQ2zzohTwhvl&#13;
-uykp4NC+L79yGC2ev9CKOZ1ldxnTWDyDR9RqJA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tServiceNowConnection" componentVersion="0.3" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tServiceNowConnection_1"/>
+    <elementParameter field="TEXT" name="SERVICENOWURL" value="context.servicenow_url"/>
+    <elementParameter field="TEXT" name="USERNAME" value="context.servicenow_username"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:0gTEz077UVtm4B7rBUd8+hfEvNtfWhLwYJBdQWsSRtgyVefml1bbJ3lyT9FgngGnl2eAr0702g=="/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tDie" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;the end is near&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="4"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="5"/>
+    <elementParameter field="CHECK" name="EXIT_JVM" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDie_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tServiceNowConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="COMPONENT_ERROR" label="OnComponentError" lineStyle="5" metaname="tServiceNowConnection_1" offsetLabelX="0" offsetLabelY="0" source="tServiceNowConnection_1" target="tDie_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentError1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tPrejob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tServiceNowConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tDie_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e5400205-f00f-4555-8b12-c20e1845e707"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>0RcqH1XG2JWyf4faoL7zx+BTCAyNAsSHAzHjilpf4xFZaX74XdH4701vevXRkPpjymtOfDjonyUt&#13;
+Sg9lF7MYzw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f75ce5e1-2420-414b-bf20-1d6576f38a1e"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>DAfwWcEW5hkXPQ98JQG4096NchqcNdDgfkQOf9XEtbMzAzwou0vi+PfKgPa0ao1ECSiIwNXht/Ia&#13;
+3pM7JWOlTQ==</DigestValue></Reference></SignedInfo><SignatureValue>ZvDvwLvCjkm0cC+3a+/KbezO/zHwXAKHkZj5bIMgkCaYMJrWiFQtgRT+TTceVnK+AfzvV+IjPzrb&#13;
+wa3y+etRXgnGOpwq89winCnLk9Nyokp/3bLRFYBCg1FWjWfGhUq291Jg6LPumPAyA972qYp0cU7P&#13;
+2AHLJ4RYMXR/KRJ3JdTzUz9mIWlohDKZsZhGzIXnK9GUX4Y81D54lNKfdkBoB/ZLDvQCPbqJaUCs&#13;
+EAgEtykXPYuy42cyB42UAGtfZESX1vXlg1ShiS1yKw/nZFjjTaVDJL7WRCPMrJZyEzitS7kK+3xC&#13;
+D36gHkGgy2oXo91QGcQs/dhJMc6jwKA+byN9nw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -133,4 +191,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_c2e5c1dd-047c-465a-bd4e-be6e2927e9dd" Target="#_dd08d2f4-4546-42cc-a89d-d8a0c0446c17"><Timestamp>2023-11-06 12:03:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f75ce5e1-2420-414b-bf20-1d6576f38a1e" Target="#_e5400205-f00f-4555-8b12-c20e1845e707"><Timestamp>2023-11-06 12:07:51</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
