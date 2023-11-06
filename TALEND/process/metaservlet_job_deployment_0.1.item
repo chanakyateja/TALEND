@@ -15,10 +15,11 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:P5Ve+03+QnLtp4xV3QGYlMfZnYyQoNIp77eXFGDhbXEv"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:GHbZ46r4zPCxP5KVbn+ZnVBBTqrldm5QJgqihg6oSisf"/>
     <contextParameter comment="" name="talend_admin_db" prompt="talend_admin_db?" promptNeeded="false" type="id_String" value="talend_administrator"/>
     <contextParameter comment="" name="taskId" prompt="taskId?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="generate_string" prompt="generate_string?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="branch" prompt="branch?" promptNeeded="false" type="id_String" value="master"/>
   </context>
   <context confirmationNeeded="false" name="DEV">
     <contextParameter comment="" name="base64_encoded_string" prompt="base64_encoded_string?" promptNeeded="false" repositoryContextId="_b95ooHyHEe6StOwy5a2xxg" type="id_String" value=""/>
@@ -36,10 +37,11 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:ggJxGUDxRFuxba0dAPnEllBfBVwLiSZ8NVGptHrbAF9H"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:UqKsSUVoRVNLRdEwLq/y7AT1ObVQV2VZMe2Tc6eQ+mWR"/>
     <contextParameter comment="" name="talend_admin_db" prompt="talend_admin_db?" promptNeeded="false" type="id_String" value="talend_administrator"/>
     <contextParameter comment="" name="taskId" prompt="taskId?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="generate_string" prompt="generate_string?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="branch" prompt="branch?" promptNeeded="false" type="id_String" value="master"/>
   </context>
   <context confirmationNeeded="false" name="UAT">
     <contextParameter comment="" name="base64_encoded_string" prompt="base64_encoded_string?" promptNeeded="false" repositoryContextId="_b95ooHyHEe6StOwy5a2xxg" type="id_String" value=""/>
@@ -57,10 +59,11 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:sgVW0QXsDTESLCJ0Te4mI/MDwI+AdKO0PW3MyolgC4u9"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:VAwcO06d/BxzNFcsSRmFP97hR7Bsov3j3a1D4c9T/IGl"/>
     <contextParameter comment="" name="talend_admin_db" prompt="talend_admin_db?" promptNeeded="false" type="id_String" value="talend_administrator"/>
     <contextParameter comment="" name="taskId" prompt="taskId?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="generate_string" prompt="generate_string?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="branch" prompt="branch?" promptNeeded="false" type="id_String" value="master"/>
   </context>
   <parameters>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
@@ -104,7 +107,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:KdXSuem7bcGvQrmH8lou8urXgj9lmzGBqQgwyucJ"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:LCJRRndDT6lKe3T8GVx+065kI6LsANJtdQkAQqPK"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -139,7 +142,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AKnVhl3itZgTyTxZZxOPnJpeiEtGGhH9QAIsK7Fn"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:RHdRBDL5HEkxhR1HRKef0P12i2VzXskH7UF+VUAf"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -199,7 +202,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.talend_metadata_DB"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.additional_params"/>
     <elementParameter field="TEXT" name="USER" value="context.talend_metadata_login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:SUUfh3iS+rZwM4HxUpxJjY8/xry0HoC3tTE8aKqYkSZdCaZRoUo6x6CpAGeCwPIf89S8KHiFB7qN7O+4"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:unDXFp3bjDpbOZbCyEMpZZTQuX6aIHLPYq9oTwXxE4yz3OZnRLmxm5hvo2oC4k4jKHGnziCMPlhgUK7F"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -220,13 +223,13 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Yed1Vdeve9ogAu2cTvpXuKjKcupgxryxlvmbcaEb"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:AW/YcTv/qoKzbSg47s2ofWfEPcHlSKno7+uPzTrc"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;talend_jobmapping&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
     <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
-    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select project,task_name from talend_jobmapping&#13;&#10;where job_name = '&quot;+context.job_name+&quot;' and active = 'Y';&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select project,task_name from talend_jobmapping&#13;&#10;where job_name = '&quot;+context.job_name+&quot;' and active = 'Y' and environment = '&quot;+context.environment+&quot;';&quot;"/>
     <elementParameter field="LABEL" name="NOTE" show="false" value="This option only applies when deploying and running in the Talend Runtime"/>
     <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" show="false" value="false"/>
     <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
@@ -296,9 +299,9 @@
       <elementValue elementRef="SCHEMA_COLUMN" value="authUser"/>
       <elementValue elementRef="VALUE" value="context.metaServlet_user"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="branch"/>
-      <elementValue elementRef="VALUE" value="&quot;master&quot;"/>
+      <elementValue elementRef="VALUE" value="context.branch"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="contextName"/>
-      <elementValue elementRef="VALUE" value="&quot;Default&quot;"/>
+      <elementValue elementRef="VALUE" value="context.environment"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="description"/>
       <elementValue elementRef="VALUE" value="&quot;Metasevlet Task Creation&quot;"/>
       <elementValue elementRef="SCHEMA_COLUMN" value="execStatisticsEnabled"/>
@@ -564,7 +567,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:HmGsuU8VRBgCVLGSsGhUc5HeA0SoiogrE4zX29xZ"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:NIrSzK6D9gwJbFhLbNzPbUaIcftx9nTJdsiGMzBx"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;executiontask&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -605,7 +608,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.talend_admin_db"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.additional_params"/>
     <elementParameter field="TEXT" name="USER" value="context.talend_metadata_login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:jvdUSSVhmJDA8yFb4zoVzTraJXU/uQd6jvhcNd6hZaAxWH4BE56ZNc4tEg8g6zLU4VYq6P92NfpnBcqZ"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:T0hSw3TrH17b0wUg6XutkBb0bwBP7kMH5xoZdsgXaRb++gclWquy3W1s2iycc/DRiyHFEttNrCmYHQFV"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -943,13 +946,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_041c9a25-abf2-49d1-9311-dccb4b938446"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4bVAJvVZbxkyXM6Xou6eQu0TIY9tC+vaVJbseuDpdGeY2MDhKCShw8jsIAUmFVV4nao5c8kvflCk&#13;
-X36pEMRuHg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8e88f241-383e-4213-9f72-ff2f29761af8"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>q3ncvXwMbVhdARN97jEYCx1Y8n++rWEn/jBmtMDM9CPIf9FrpMs5UlJEhQFXfcDCJumwqYonGs4r&#13;
-juqdpBK9EQ==</DigestValue></Reference></SignedInfo><SignatureValue>kpidf+ZXxe3jJQdpUziFo3nRzjSP/Bcf2to1gF1HpbPT21+X6u7FIO1tvbAyr2HWOHVD83p6caCo&#13;
-rN9+FF0jUvYy4CZKPdnaj3Yrf2xzEtvTXscGuuJYerx1mlvKs/QnY8AAFolc+n2LDEa+uMOWNBBU&#13;
-4ssHVZJl0IV+HHjUCZHqVXTib6IDvNnRVCKE/cdl7qHOnvMLQXer9g8yQr+pm7Is8blhQUahiUfB&#13;
-etrg6AzNZaSkEnyqqcYJPm4mCSlEJ9MR4nNh10L3eqPutkCFdwEbrnN79zhSASlspvQpqjdF2n6g&#13;
-Gh7BpgSDIbNf9qFwgZt+PoiFtsL0okmDXuJqSg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_be88ec87-56fe-434c-b431-ae50b149c396"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>34+nUgtEY8kPNK9FrP3mxN2y1xayFfUuWvYZtzPdH5JapUydPe2B4fG4QsgFVWsBqLeAIybkrtBi&#13;
+1IZeTltzbQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_a9631e3c-4b9e-465f-af5f-0c72645c70d3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>qOkjkRcv2kwkETnAWTTfYszAQHjc4pfA1nFmPst9xnBpXtbo8PoOysIudu674XZ88OD5LI7rnkuN&#13;
+hkGED+DFfg==</DigestValue></Reference></SignedInfo><SignatureValue>G4jjwpJ5t4ZRuSuPaNqMMc5fYSr7ldh7aQyqr5OnuhQNub+jQ8Xlye3/K6EZ3Gdy7CfzIO0DNFh6&#13;
+SJ6V+NU/HMkLnq2xk9TzsLjREhIPrBUOEPbzoJ2cwWhcw9eOHqkrpx582MM2U3PWbxhGvZOE6Ze3&#13;
+c1LIQTAW5b7hRr9HvrurLIzYOcn5zPpJoJ2kcVPXQQy4OCz8YeSHPxSyFCsrwrooWjXAM6Lp5sh/&#13;
+FPoZ/U12BlzTVSsu+0VfptOQwSL3DR8nCffYiq9TPJTVizeMFv+O4189BInAjnzRmfvj34vI3kIn&#13;
+l/xZAMAmsyvqGpXE0oPZLzmV9tgFEB/8hk6+UQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -971,4 +974,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8e88f241-383e-4213-9f72-ff2f29761af8" Target="#_041c9a25-abf2-49d1-9311-dccb4b938446"><Timestamp>2023-11-06 11:40:10</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_a9631e3c-4b9e-465f-af5f-0c72645c70d3" Target="#_be88ec87-56fe-434c-b431-ae50b149c396"><Timestamp>2023-11-06 12:30:03</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
