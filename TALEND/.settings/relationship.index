@@ -260,9 +260,17 @@
     "type" : "job"
   },
   "relatedItems" : [ {
+    "id" : "_b95ooHyHEe6StOwy5a2xxg",
+    "version" : "Latest",
+    "type" : "context"
+  }, {
     "id" : "_q7VrwHycEe6StOwy5a2xxg",
     "version" : "Latest",
     "type" : "context"
+  }, {
+    "id" : "TALEND:_h00OIHyGEe6StOwy5a2xxg",
+    "version" : "Latest",
+    "type" : "job"
   }, {
     "id" : "DataOperation",
     "version" : "Latest",
