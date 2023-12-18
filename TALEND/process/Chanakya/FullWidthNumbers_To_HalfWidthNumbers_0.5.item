@@ -1,521 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="HKG" framework="" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="AUS">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="AUS"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:2KjnL5IepWOQdDTfv65B+QIB5eXzG4VR1mnWQHMtiqy1GfAfJGBrAFqNUZ4eCcEo"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="HKG">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="HKG"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:QK4rxJnn9PlhDyIfN/tSajwz3b6pFhn7FNogdU74NlW/aOm7zI83brOLKMPthHIU"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="KOREA">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="KOREA"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="cdpadmin@mysql-ap-koreacentral-prod-cdpkr-talendmdm-01"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:WeUr7+thDEM32jnUrKLsWeC7ZyCXkWy9++XrdR1rC4QM17kdol/3BE0mcg=="/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-koreacentral-prod-cdpkr-talendmdm-01.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="MYS">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="MYS"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:s/epHbtTtczUdLo39Pi/K5dWxhz/Mf8irg2NNAQZ/PH1QmjCLT4lMpBHS+ki8+d8"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="NZL">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="NZL"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:yhjxLxV4cy8MABLiRwEZxXe2X9jADNfbULrGH/sxv1HKZD6WRbTZpv3A8OdZvpWV"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="PHL">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="PHL"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:tkRikweLVMQcHav8p4JqoFX/aRg7Iw+9kmuCWvHqyxFdI5kGbT7cEJz2jeFsEdbN"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="SGP">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="SGP"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:lGkERzMUjR+ENArHOgdgYopRuaROMD0K4RiiHy+37+Om7fZKKASypMTkKhmnv4G4"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="THA">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="THA"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:M7seLDkQ6rPSiYn3fBRta8FiMdqSvIJX2ntK7RPDunkwQTyGUBXEBbapT9KokZyL"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="TWN">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="TWN"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:iQ37EVLl+hviW6cqWtJITrsX6vlV4pRt85uPRc7yg1Uxg5oSy2Kkjh1N4u05Lmnv"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="VER">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="VER"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:uym2U9+PY7Hq6OQ3oRidGrBqOjtYsQoG09+8cqIW4B514c1hakQ2GL6QLMfOkXDV"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
-  <context confirmationNeeded="false" name="VNM">
-    <contextParameter comment="" name="regex_englishname" prompt="regex_englishname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_localname" prompt="regex_localname?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="regex_mobile" prompt="regex_mobile?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1][0-9]{9,10}$"/>
-    <contextParameter comment="" name="regex_fixedline" prompt="regex_fixedline?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[1-9][0-9]{8,14}$"/>
-    <contextParameter comment="" name="regex_zip" prompt="regex_zip?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[0][1-9]{4,5}$"/>
-    <contextParameter comment="" name="regex_email" prompt="regex_email?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"/>
-    <contextParameter comment="" name="BATCH_ID" prompt="BATCH_ID?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value=""/>
-    <contextParameter comment="" name="extendInsertSize" prompt="extendInsertSize?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="3500"/>
-    <contextParameter comment="" name="job_name" prompt="job_name?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="Landing_to_Intermediate_Standardization"/>
-    <contextParameter comment="" name="step_number" prompt="step_number?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3"/>
-    <contextParameter comment="" name="filenameMetadata" prompt="filenameMetadata?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_metadata_v2.ini"/>
-    <contextParameter comment="" name="filepathMetadata" prompt="filepathMetadata?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="/opt/TalendJobScripts/TalendMetadata/"/>
-    <contextParameter comment="" name="regex_phonenumber" prompt="regex_phonenumber?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="[`!@#$%^&amp;*;]"/>
-    <contextParameter comment="" name="region" prompt="region?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="VNM"/>
-    <contextParameter comment="" name="talend_metadata_db" prompt="talend_metadata_db?" promptNeeded="false" repositoryContextId="_6acnYJZlEemHoaVPOpxoCg" type="id_String" value="talend_metadata"/>
-    <contextParameter comment="" name="ELC_Intermediate_Database" prompt="ELC_Intermediate_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmintermediate"/>
-    <contextParameter comment="" name="ELC_Landing_AdditionalParams" prompt="ELC_Landing_AdditionalParams?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=false&amp;autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf8"/>
-    <contextParameter comment="" name="ELC_Landing_Database" prompt="ELC_Landing_Database?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="mdmlanding"/>
-    <contextParameter comment="" name="ELC_Landing_Login" prompt="ELC_Landing_Login?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="talend_mdm_apac_prod@mysql-ap-southeastasia-prod-cepa-talend-02"/>
-    <contextParameter comment="" name="ELC_Landing_Password" prompt="ELC_Landing_Password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:w7jrAE209xLC7yeuNdhTrA/CPvN5l3qelmYZ14MkOl+n4jmbMKyTVFdTJdRj5wlb"/>
-    <contextParameter comment="" name="ELC_Landing_Port" prompt="ELC_Landing_Port?" promptNeeded="false" repositoryContextId="_wAQ-gARMEemlA8aWEvThMw" type="id_String" value="3306"/>
-    <contextParameter comment="" name="ELC_Landing_Server" prompt="ELC_Landing_Server?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="mysql-ap-southeastasia-prod-cepa-talend-02.mysql.database.azure.com"/>
-    <contextParameter comment="" name="query_address" prompt="query_address?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_auxiliaryattribute" prompt="query_auxiliaryattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_consumergroup" prompt="query_consumergroup?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_crossbrandoptin" prompt="query_crossbrandoptin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_customattribute" prompt="query_customattribute?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_emedia" prompt="query_emedia?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairconcerns" prompt="query_hairconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hairtype" prompt="query_hairtype?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_hobby" prompt="query_hobby?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_makeupconcerns" prompt="query_makeupconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_notes" prompt="query_notes?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_optin" prompt="query_optin?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_personal" prompt="query_personal?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_phone" prompt="query_phone?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_program" prompt="query_program?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_rejects" prompt="query_rejects?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_remark" prompt="query_remark?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_skinconcerns" prompt="query_skinconcerns?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_sourcesystem" prompt="query_sourcesystem?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="query_terms" prompt="query_terms?" promptNeeded="false" repositoryContextId="_y9gvUABeEeqSzZ8OApEV1w" type="id_String" value=""/>
-    <contextParameter comment="" name="special_char_regex" prompt="special_char_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\p{Nd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-    <contextParameter comment="" name="digit_regex" prompt="digit_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;\\p{Nd}&quot;"/>
-    <contextParameter comment="" name="unicode_regex" prompt="unicode_regex?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="&quot;[^\\p{L}\\p{M}\\p{Z}\\p{Pd}\\u0027\\u0060\\u002F\\u002E\\u002C\\p{Cf}\\p{Cs}\\s]&quot;"/>
-  </context>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" defaultContext="DEV" framework="" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="DEV"/>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Xms1256M&quot;,&quot;-Xmx2024M&quot;,&quot;-noverify&quot;]}"/>
@@ -561,7 +45,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:rU95sZ2WvTUDD7yFoV3LwPl7PeQmtWWQWKYvbw7O"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:Tmxn86k47osCvWp1xfx/pwfkuHudt2ggU+NNEDfW"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -596,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value=""/>
     <elementParameter field="TEXT" name="USER" show="false" value="context.ELC_DBC_Login"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:F8AzgvCMdLUhYRgh8RtNGwGwv+iem57C1iJ/eI+iwLJZ6976sXORKLc3Nf5Sy5ireMyEoQ=="/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:BLz5UKa5NngBKdQXdE34ioUNsjLxtnZTnzN3JhBe+RONQXp4C4pkXlqkRjWxAIZudyhuLQ=="/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;tstatcatcher&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;tlogcatcher&quot;"/>
@@ -615,12 +99,7 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_kmQ0IGrsEe2zhbabcuX6ig" name="DQTechnical"/>
-    <routinesParameter id="_klms0GrsEe2zhbabcuX6ig" name="DataMasking"/>
     <routinesParameter id="_kkB_gGrsEe2zhbabcuX6ig" name="DataOperation"/>
-    <routinesParameter id="_kl3ykGrsEe2zhbabcuX6ig" name="DataQualityDependencies"/>
-    <routinesParameter id="_klv2wGrsEe2zhbabcuX6ig" name="DataQuality"/>
-    <routinesParameter id="_kmFN8GrsEe2zhbabcuX6ig" name="DqStringHandling"/>
     <routinesParameter id="_kmbMMGrsEe2zhbabcuX6ig" name="MDM"/>
     <routinesParameter id="_kkLwgGrsEe2zhbabcuX6ig" name="Mathematical"/>
     <routinesParameter id="_kkUTYGrsEe2zhbabcuX6ig" name="Numeric"/>
@@ -631,19 +110,14 @@
     <routinesParameter id="_kk47IGrsEe2zhbabcuX6ig" name="TalendDate"/>
     <routinesParameter id="_klW1MGrsEe2zhbabcuX6ig" name="TalendStringUtil"/>
     <routinesParameter id="_klDTMGrsEe2zhbabcuX6ig" name="TalendString"/>
-    <routinesParameter id="_Qhv_IJvPEe2wSou3FXasfg" name="phone_number"/>
   </parameters>
   <node componentName="tFileInputExcel" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputExcel_1"/>
     <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
     <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/10222/Downloads/phone_number.xlsx&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:0XPE3R6yYsyMMh04Oy6QPeY0QKDJoA5ky1mVn2XM"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:QD0kcODJ4sie7oaVdksOxO0om+J6WY/t84NSoRTm"/>
     <elementParameter field="CHECK" name="ALL_SHEETS" value="true"/>
-    <elementParameter field="TABLE" name="SHEETLIST" show="false">
-      <elementValue elementRef="SHEETNAME" value="&quot;Sheet1&quot;"/>
-      <elementValue elementRef="USE_REGEX" value=""/>
-      <elementValue elementRef="SHEETNAME"/>
-    </elementParameter>
+    <elementParameter field="TABLE" name="SHEETLIST" show="false"/>
     <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
@@ -727,7 +201,6 @@
     <elementParameter field="CHECK" name="INCLUDE_PHONETICRUNS" show="false" value="true"/>
     <elementParameter field="TEXT" name="LABEL" value="Source_phone"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <elementParameter field="TABLE" name="SHEETLIST"/>
     <metadata connector="FLOW" label="metadata" name="tFileInputExcel_1">
       <column comment="" key="false" length="2" name="SRCP_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="4" name="SRCP_SRCC_ID" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" type="id_String" usefulColumn="true"/>
@@ -776,7 +249,7 @@
       <column comment="" key="false" length="-1" name="replace_number" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="TalendMapper:MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables name="Var" sizeState="INTERMEDIATE">
         <mapperTableEntries expression="routines.phone_number.toHalfWidth(row1.SRCP_PHONENUMBER) " name="replace_double_bytes" type="id_String"/>
         <mapperTableEntries expression="routines.phone_number.replaceFullWidthCharacteres(row1.SRCP_PHONENUMBER) " name="replace_number" type="id_String"/>
@@ -808,11 +281,11 @@
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
       <elementValue elementRef="SCHEMA_COLUMN" value="replace_double_bytes"/>
       <elementValue elementRef="LENGTH" value="10"/>
@@ -851,13 +324,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_89a88666-7610-4d1a-9538-4b12eac87cb0"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ynecrY6LfGeLipIFLn7Q/rjQwUBdREGC9TnQ6OMrmruG/04PMHyPT16Iv21BVIMLGK1uTFWJZPOD&#13;
-9yfQbME0QA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9a82e378-f9ad-402a-b278-8ad6cf6cecc1"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>OsNEwbUTkd+Rh/fPsfziK82uAU64HNv/XoR9ug2GEJ2kEFCMt97PMD70hmLbs1hgtB4Fkj5TIRZD&#13;
-8uRp5fXbSw==</DigestValue></Reference></SignedInfo><SignatureValue>jQZadIvxvQnUZMtWdaJkGf45HkKSpXkx0lFNC3I+WRVBjLza+5LARayKNjGZjbTSCvELWeZtHndI&#13;
-TGuisIju+H++yFApYojP54AbY/5HUPQvnK1C3W77U7l8/TfHKVR5Ugbbqj7MuFnjx+aqygbh03Q/&#13;
-b8vV3pzqD3Zfbpdy0vU3oDTdHZIQ6kzteLRDfLNVbUEptQg5VbMzbroE5UitzKJDk4soiStXrJRi&#13;
-ySBFn3fmi47sBd9gAWEowmvwJZ4zFhzjPS4wyO8qc8g7gcCH5caKocV9qCstqsE7V/DHjOSvONA7&#13;
-sLhyLW8ikDghZ1J8JOqR/e6JrrDMP8oxDUAN6w==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5ce97742-fc37-488b-a143-d86630c2967a"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>zUnhQikIB7w2v6ox0IjtPNsxkkTFq9z9jZ8wUVJAKhUtKKUTQB228C0Qm0tlqWFWEIEcJB2y1m7I&#13;
+0lLs8HTitg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_614a8a88-e9b5-4e39-a8ad-bc9e88abd888"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>9Uj8AUpBOf9boeSQTSyBMASf4VuaIZbzA2Y430jFrn3xGFtOusKA2cxMEUXw95+LRnQreV4DBXxu&#13;
+0XIfAAb6Sw==</DigestValue></Reference></SignedInfo><SignatureValue>aUOqRhvqG2wLdGCnqsQOqXXHsAQ2IyLXN2/O212OBC2gH1Ii69VehZyQvNcT4fmKuIB7ZE8xNfLK&#13;
+xEkPCsZjX1kZmRmxMVesGosEEMJZlN4MChUnT78pLCGv/S32dxToVRjBUc9d+YXb8YzQDDLQd0gO&#13;
+Q+Gk4Jfeno+siYndoBZYkgCFlZdXnNvcuCsNxJFBPFh5sA+9k8z8FOJL8ZcNBnU7IQJvBJwH3FcB&#13;
+/1UFpL/6rc+2RmfIRngBSOaASIyHiGq4c/9PVvsheBhnHNO8jqRfLlRqYfPCjymvgsSV68h8I8jC&#13;
+2JiyHgxO7XchgUSWfvfk5s0Hx1u+dDwSwN1hog==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -879,4 +352,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9a82e378-f9ad-402a-b278-8ad6cf6cecc1" Target="#_89a88666-7610-4d1a-9538-4b12eac87cb0"><Timestamp>2023-12-18 10:22:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_614a8a88-e9b5-4e39-a8ad-bc9e88abd888" Target="#_5ce97742-fc37-488b-a143-d86630c2967a"><Timestamp>2023-12-18 12:25:53</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
