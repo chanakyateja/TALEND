@@ -21,6 +21,7 @@
     <module>jobs/joblets/initializecontext_0.1</module>
     <module>jobs/process/localfullname_key_0.1</module>
     <module>jobs/process/Chanakya/sj_consumersplitdataload_bv1_0.5</module>
+    <module>jobs/process/csv_to_excel_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
