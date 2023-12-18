@@ -36,6 +36,7 @@
     <module>jobs/process/Chanakya/email_to_file_0.1</module>
     <module>jobs/process/Chanakya/encrypt_0.1</module>
     <module>jobs/process/Chanakya/encryption_validation_0.1</module>
+    <module>jobs/process/Chanakya/fatal_error_mail_notification_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
