@@ -34,6 +34,7 @@
     <module>jobs/process/Chanakya/create_manual_json_0.1</module>
     <module>jobs/process/Chanakya/dynamic_column_assigner_0.1</module>
     <module>jobs/process/Chanakya/email_to_file_0.1</module>
+    <module>jobs/process/Chanakya/encrypt_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
