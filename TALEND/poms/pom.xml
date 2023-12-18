@@ -25,6 +25,7 @@
     <module>jobs/process/mysql_dump_0.1</module>
     <module>jobs/process/remove_duplicates_0.1</module>
     <module>jobs/process/serivcenow_to_mysql_0.1</module>
+    <module>jobs/process/split_load_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
