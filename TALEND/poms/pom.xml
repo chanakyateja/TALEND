@@ -18,7 +18,7 @@
     <module>jobs/process/sj_load_datafrom_db_0.1</module>
     <module>jobs/process/load_data_from_servicenow_0.1</module>
     <module>jobs/process/demo/onboardingdemojob_0.1</module>
-    <module>jobs/joblets/initializecommoncontext_0.1</module>
+    <module>jobs/joblets/initializecontext_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>

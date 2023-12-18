@@ -9,10 +9,10 @@
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.talend.joblet</groupId>
-  <artifactId>InitializeCommonContext</artifactId>
+  <artifactId>InitializeContext</artifactId>
   <version>0.1.0</version>
   <packaging>pom</packaging>
-  <name>TALEND InitializeCommonContext</name>
+  <name>TALEND InitializeContext</name>
   <properties>
     <talend.joblet.id>_TNThwJ1tEe6D4KPAETp4vg</talend.joblet.id>
     <talend.joblet.version>0.1</talend.joblet.version>
