@@ -28,6 +28,7 @@
     <module>jobs/process/split_load_0.1</module>
     <module>jobs/process/tables_dynamically_0.1</module>
     <module>jobs/process/textractdynamicfields_0.1</module>
+    <module>jobs/process/tssh_publickey_privatekey_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>
