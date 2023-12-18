@@ -204,7 +204,7 @@
     </dependency>
     <dependency>
       <groupId>org.example.talend.joblet</groupId>
-      <artifactId>InitializeCommonContext</artifactId>
+      <artifactId>InitializeContext</artifactId>
       <version>0.1.0</version>
       <type>pom</type>
     </dependency>
