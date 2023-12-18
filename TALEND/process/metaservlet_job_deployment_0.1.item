@@ -7,7 +7,7 @@
     <contextParameter comment="" name="task_name" prompt="task_name?" promptNeeded="false" type="id_String" value="Load_DataToFile"/>
     <contextParameter comment="" name="talend_metadata_DB" prompt="talend_metadata_DB?" promptNeeded="false" type="id_String" value="talend_metadata"/>
     <contextParameter comment="" name="talend_metadata_login" prompt="talend_metadata_login?" promptNeeded="false" type="id_String" value="root"/>
-    <contextParameter comment="" name="talend_metadata_password" prompt="talend_metadata_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:tm+S/+xbltx6KZ81Y+UZApvMrrOv2fUhhzSvZzjuHNzn"/>
+    <contextParameter comment="" name="talend_metadata_password" prompt="talend_metadata_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:Rph32WGPtPrbrnRW49SCvQ2Cz1YIUvDzwkxhSybMvkkY"/>
     <contextParameter comment="" name="talend_metadata_host" prompt="talend_metadata_host?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
     <contextParameter comment="" name="talend_metadata_port" prompt="talend_metadata_port?" promptNeeded="false" type="id_String" value="3306"/>
     <contextParameter comment="" name="additional_params" prompt="additional_params?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
@@ -15,7 +15,7 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value="Talend"/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:POJEkh0aBTTscgRLRNnVE6Hp4/C/XJlAtnzWkgrQdr6h"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:7SFpLnlNemtTdnc8HhUqSpxsuiBLL/Q+vqW4gRlviFcY"/>
     <contextParameter comment="" name="talend_admin_db" prompt="talend_admin_db?" promptNeeded="false" type="id_String" value="talend_administrator"/>
     <contextParameter comment="" name="taskId" prompt="taskId?" promptNeeded="false" type="id_Integer" value="15"/>
     <contextParameter comment="" name="generate_string" prompt="generate_string?" promptNeeded="false" type="id_String" value=""/>
@@ -30,7 +30,7 @@
     <contextParameter comment="" name="task_name" prompt="task_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="talend_metadata_DB" prompt="talend_metadata_DB?" promptNeeded="false" type="id_String" value="talend_metadata"/>
     <contextParameter comment="" name="talend_metadata_login" prompt="talend_metadata_login?" promptNeeded="false" type="id_String" value="root"/>
-    <contextParameter comment="" name="talend_metadata_password" prompt="talend_metadata_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:PQsrhsHkbKCp3cQy/wqshsnslJsZPKQ7v3NB6cPy6cOX"/>
+    <contextParameter comment="" name="talend_metadata_password" prompt="talend_metadata_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:RejgnH5FHQzwJwDeEbcRWSrJR+KeQAhxSN0o8GoSPwYg"/>
     <contextParameter comment="" name="talend_metadata_host" prompt="talend_metadata_host?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
     <contextParameter comment="" name="talend_metadata_port" prompt="talend_metadata_port?" promptNeeded="false" type="id_String" value="3306"/>
     <contextParameter comment="" name="additional_params" prompt="additional_params?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
@@ -38,7 +38,7 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value="Talend"/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:v9oV46kdnvLocLF9cfmt8rUgqj2UBfTR/AgzOQRcwprG"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:5j+/fRRvlB89ezUW3yXUjjys9q8Wnw2tQPAHModomD0p"/>
     <contextParameter comment="" name="talend_admin_db" prompt="talend_admin_db?" promptNeeded="false" type="id_String" value="talend_administrator"/>
     <contextParameter comment="" name="taskId" prompt="taskId?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="generate_string" prompt="generate_string?" promptNeeded="false" type="id_String" value=""/>
@@ -53,7 +53,7 @@
     <contextParameter comment="" name="task_name" prompt="task_name?" promptNeeded="false" type="id_String" value=""/>
     <contextParameter comment="" name="talend_metadata_DB" prompt="talend_metadata_DB?" promptNeeded="false" type="id_String" value="talend_metadata"/>
     <contextParameter comment="" name="talend_metadata_login" prompt="talend_metadata_login?" promptNeeded="false" type="id_String" value="root"/>
-    <contextParameter comment="" name="talend_metadata_password" prompt="talend_metadata_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:LsWRAaJdjF3ZzLS3fze7c6wexi7F0nPap8A5bCPC3F7d"/>
+    <contextParameter comment="" name="talend_metadata_password" prompt="talend_metadata_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:XkdAUDLUuMvc2rOz8yQrLN9fd770LKThBQynmFjijMHk"/>
     <contextParameter comment="" name="talend_metadata_host" prompt="talend_metadata_host?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
     <contextParameter comment="" name="talend_metadata_port" prompt="talend_metadata_port?" promptNeeded="false" type="id_String" value="3306"/>
     <contextParameter comment="" name="additional_params" prompt="additional_params?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
@@ -61,7 +61,7 @@
     <contextParameter comment="" name="applyContextToChildren" prompt="applyContextToChildren?" promptNeeded="false" type="id_Boolean" value="false"/>
     <contextParameter comment="" name="Project" prompt="Project?" promptNeeded="false" type="id_String" value="Talend"/>
     <contextParameter comment="" name="metaServlet_user" prompt="metaServlet_user?" promptNeeded="false" type="id_String" value="ckotipal@thinkartha.com"/>
-    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:It74mVCPAtSIpKJB7LZcwmD4YWcpIfGaS/y5pklCYJ2B"/>
+    <contextParameter comment="" name="metaServlet_password" prompt="metaServlet_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:LS0JcaAA/yzCkK2viRqdDh1c0ssbR6wXV32Q7i3fZibv"/>
     <contextParameter comment="" name="talend_admin_db" prompt="talend_admin_db?" promptNeeded="false" type="id_String" value="talend_administrator"/>
     <contextParameter comment="" name="taskId" prompt="taskId?" promptNeeded="false" type="id_Integer" value=""/>
     <contextParameter comment="" name="generate_string" prompt="generate_string?" promptNeeded="false" type="id_String" value=""/>
@@ -110,7 +110,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:C/KYluwdhahRl9/D6EWQuszOllF/3cXHeX+ncV9I"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:NDtL6S6RkSfamECx3ZaFMzjeao0haUxO1ybpRFxt"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -145,7 +145,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:CzeHOdfkoW+XEV5/VqfN9+ksGwWyPYXq8qGgDgK9"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:Thgcpl2zVqetDX+4uIKaOhPdZSQ/ZA7sf8LCFFzX"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -206,7 +206,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.talend_metadata_DB"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.additional_params"/>
     <elementParameter field="TEXT" name="USER" value="context.talend_metadata_login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:FK+x+RM793hSXFm1SjMGGsSR+BJsC9aufcmCMBvXmK9AAbCyq3y7zUgozVeH6WD512PMtU5WAX8b7U4i"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:KC6skGxBUuudNOBzd1iOVWMNb4MqQ73KGwOh4AumvP6KQxwqBwv4wftOMgkVm8AZJ0GIG3y+PgF4Lxha"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -228,7 +228,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ffh5TfTd4Mb5kF47lZaYcnox29vJVTIu6qKMabA5"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:bgyz//4/x30rkwAAuEKWANRViB5oZQmUWMy2ZV18"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;talend_jobmapping&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -578,7 +578,7 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:vcwf369XVqHArzOAwIvCB1/DHd41785NGKJKsxQ9"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:itZybJAYc/KkCN1sInQFWK5drpJVGliT5vy+FbfO"/>
     <elementParameter field="DBTABLE" name="TABLE" value="&quot;executiontask&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
@@ -619,7 +619,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.talend_admin_db"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.additional_params"/>
     <elementParameter field="TEXT" name="USER" value="context.talend_metadata_login"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:DLkS+d/gZ4v0EIntdPkUgyf3fVzqo5XcHKE1ftrCA/D44bnCK6MgECbUvsRpKFLSXXTVVd8clQeJ6kNX"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:G8eOeQlEnHEu2OaDl7tVAppVNOqj24Q0qG1XLQ6STsZaegAZRdgPy6oMPi7g7+Qifj4sZ/Xt6lmgImIc"/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -801,8 +801,8 @@
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:hI8ziiAiEcTQUKgk5WvO+hn2nSdtxEjQdHMqmwyH"/>
-    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:cU4+YrvRJ+1RcEfTiYHLiTOwLTgj78udMQG0a+UA"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;executiontask&quot;"/>
     <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
     <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
@@ -826,122 +826,28 @@
       <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="896">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
-    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
-    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;context.taskId = row11.id;&#10;System.out.println(context.taskId);&#10;   "/>
-    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;"/>
-    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
-    <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
-    <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
-    <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
-    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tJavaFlex_1"/>
-  </node>
-  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="896">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
-    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
-    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
-    <elementParameter field="TABLE" name="VALUES">
-      <elementValue elementRef="SCHEMA_COLUMN" value="actionName"/>
-      <elementValue elementRef="VALUE" value="context.action"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="authPass"/>
-      <elementValue elementRef="VALUE" value="context.metaServlet_password"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="authUser"/>
-      <elementValue elementRef="VALUE" value="context.metaServlet_user"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="deleteAllRelatedData"/>
-      <elementValue elementRef="VALUE" value="true"/>
-      <elementValue elementRef="SCHEMA_COLUMN" value="taskId"/>
-      <elementValue elementRef="VALUE" value="context.taskId"/>
-    </elementParameter>
-    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
-    <elementParameter field="TABLE" name="INTABLE" show="false"/>
-    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
-    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
-    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tFixedFlowInput_3">
-      <column comment="" key="false" length="-1" name="actionName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="authPass" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="authUser" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="deleteAllRelatedData" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="taskId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="896">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteJSONField_3"/>
-    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="json"/>
-    <elementParameter field="TABLE" name="ROOT" show="false">
-      <elementValue elementRef="PATH" value="/rootTag"/>
-      <elementValue elementRef="COLUMN" value=""/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="1"/>
-      <elementValue elementRef="PATH" value="/rootTag/authPass"/>
-      <elementValue elementRef="COLUMN" value="authPass"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="3"/>
-      <elementValue elementRef="PATH" value="/rootTag/authUser"/>
-      <elementValue elementRef="COLUMN" value="authUser"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="4"/>
-      <elementValue elementRef="PATH" value="/rootTag/deleteAllRealtedData"/>
-      <elementValue elementRef="COLUMN" value="deleteAllRelatedData"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="5"/>
-      <elementValue elementRef="PATH" value="/rootTag/taskId"/>
-      <elementValue elementRef="COLUMN" value="taskId"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="branch"/>
-      <elementValue elementRef="ORDER" value="6"/>
-    </elementParameter>
-    <elementParameter field="TABLE" name="GROUP" show="false"/>
-    <elementParameter field="TABLE" name="LOOP" show="false">
-      <elementValue elementRef="PATH" value="/rootTag/actionName"/>
-      <elementValue elementRef="COLUMN" value="actionName"/>
-      <elementValue elementRef="VALUE" value=""/>
-      <elementValue elementRef="ATTRIBUTE" value="main"/>
-      <elementValue elementRef="ORDER" value="2"/>
-    </elementParameter>
-    <elementParameter field="EXTERNAL" name="MAP" value=""/>
-    <elementParameter field="TABLE" name="GROUPBYS"/>
-    <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
-    <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
-    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
-    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" show="false" value="true"/>
-    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tWriteJSONField_3">
-      <column comment="" key="false" length="-1" name="json" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
-  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="1024">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
-    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
-    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="800" posY="1152">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_5"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
     <elementParameter field="RADIO" name="VERTICAL" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
     <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
     <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
-    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
-    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
-    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
-    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
     <elementParameter field="TABLE" name="LENGTHS" show="false">
-      <elementValue elementRef="SCHEMA_COLUMN" value="json"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="id"/>
       <elementValue elementRef="LENGTH" value="10"/>
     </elementParameter>
     <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
     <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tLogRow_4">
-      <column comment="" key="false" length="-1" name="json" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    <metadata connector="FLOW" name="tLogRow_5">
+      <column comment="" key="false" length="-1" name="id" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="INT" type="id_Integer" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tREST" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="512" posY="1056">
@@ -1021,6 +927,128 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJavaRow_5">
       <column comment="" key="false" length="-1" name="encoded_string" nullable="false" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaFlex" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="CHECK" name="DATA_AUTO_PROPAGATE" value="true"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_START" value="// start part of your Java code&#10;context.taskId = row11.id;&#10;System.out.println(context.taskId);&#10;   "/>
+    <elementParameter field="MEMO_JAVA" name="CODE_MAIN" value="// here is the main part of the component,&#10;// a piece of code executed in the row&#10;// loop&#10;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE_END" value="// end of the component, outside/closing the loop&#10;      "/>
+    <elementParameter field="CHECK" name="Version_V2_0" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V3_2" show="false" value="false"/>
+    <elementParameter field="CHECK" name="Version_V4.0" show="false" value="true"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaFlex_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="800" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="actionName"/>
+      <elementValue elementRef="VALUE" value="context.action"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="authPass"/>
+      <elementValue elementRef="VALUE" value="context.metaServlet_password"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="authUser"/>
+      <elementValue elementRef="VALUE" value="context.metaServlet_user"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deleteAllRelatedData"/>
+      <elementValue elementRef="VALUE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="taskId"/>
+      <elementValue elementRef="VALUE" value="context.taskId"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_3">
+      <column comment="" key="false" length="-1" name="actionName" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="authPass" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="authUser" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="deleteAllRelatedData" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="taskId" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tWriteJSONField" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="1024" posY="896">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tWriteJSONField_3"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="COLUMN_LIST" name="JSONFIELD" value="json"/>
+    <elementParameter field="TABLE" name="ROOT" show="false">
+      <elementValue elementRef="PATH" value="/rootTag"/>
+      <elementValue elementRef="COLUMN" value=""/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="1"/>
+      <elementValue elementRef="PATH" value="/rootTag/authPass"/>
+      <elementValue elementRef="COLUMN" value="authPass"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="3"/>
+      <elementValue elementRef="PATH" value="/rootTag/authUser"/>
+      <elementValue elementRef="COLUMN" value="authUser"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="4"/>
+      <elementValue elementRef="PATH" value="/rootTag/deleteAllRealtedData"/>
+      <elementValue elementRef="COLUMN" value="deleteAllRelatedData"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="5"/>
+      <elementValue elementRef="PATH" value="/rootTag/taskId"/>
+      <elementValue elementRef="COLUMN" value="taskId"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="branch"/>
+      <elementValue elementRef="ORDER" value="6"/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="GROUP" show="false"/>
+    <elementParameter field="TABLE" name="LOOP" show="false">
+      <elementValue elementRef="PATH" value="/rootTag/actionName"/>
+      <elementValue elementRef="COLUMN" value="actionName"/>
+      <elementValue elementRef="VALUE" value=""/>
+      <elementValue elementRef="ATTRIBUTE" value="main"/>
+      <elementValue elementRef="ORDER" value="2"/>
+    </elementParameter>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="TABLE" name="GROUPBYS"/>
+    <elementParameter field="CHECK" name="REMOVE_ROOT" value="true"/>
+    <elementParameter field="CHECK" name="COMPACT_FORMAT" show="false" value="true"/>
+    <elementParameter field="CHECK" name="QUOTE_ALL_VALUES" value="false"/>
+    <elementParameter field="CHECK" name="QUOTE_NULL_VALUES" show="false" value="true"/>
+    <elementParameter field="CHECK" name="ALLOW_EMPTY_STRINGS" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWriteJSONField_3">
+      <column comment="" key="false" length="-1" name="json" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="1024">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" show="false" value="true"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" show="false" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" show="false" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" show="false" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" show="false" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="json"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_4">
+      <column comment="" key="false" length="-1" name="json" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tJava_1">
@@ -1121,7 +1149,7 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row8"/>
   </connection>
-  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tJavaFlex_1">
+  <connection connectorName="FLOW" label="row11" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tLogRow_5">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row11"/>
   </connection>
@@ -1129,9 +1157,20 @@
     <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk6"/>
   </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tREST_3" offsetLabelX="0" offsetLabelY="0" source="tREST_3" target="tLogRow_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tJavaRow_5">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
+  </connection>
   <connection connectorName="ITERATE" label="Iterate" lineStyle="7" metaname="tJavaFlex_1" offsetLabelX="0" offsetLabelY="0" source="tJavaFlex_1" target="tFixedFlowInput_3">
     <elementParameter field="CHECK" name="ENABLE_PARALLEL" value="false"/>
     <elementParameter field="TEXT" name="NUMBER_PARALLEL" show="false" value="2"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="iterate1"/>
   </connection>
   <connection connectorName="FLOW" label="row9" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tWriteJSONField_3">
@@ -1144,21 +1183,13 @@
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row9"/>
   </connection>
   <connection connectorName="FLOW" label="row10" lineStyle="0" metaname="tWriteJSONField_3" offsetLabelX="0" offsetLabelY="0" source="tWriteJSONField_3" target="tLogRow_4">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row10"/>
-  </connection>
-  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tREST_3" offsetLabelX="0" offsetLabelY="0" source="tREST_3" target="tLogRow_3">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row12"/>
-  </connection>
-  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tJavaRow_5">
-    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
-    <elementParameter field="CHECK" name="ACTIVATE" show="false" value="false"/>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="out3"/>
   </connection>
   <subjob>
     <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" show="false" value="true"/>
@@ -1257,13 +1288,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_b8c6be6b-a925-45b3-bfff-9b2a28be1528"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>KftmkSwV0/9+vLWKdLu/NKLkL2bqIUJ3p4gdVcbGq6DpQWYfutcft/MsqQidMw74vgKSOhykSa8d&#13;
-VVz7n0zkEw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_904fef4e-21a2-4094-b7d2-992d6e3622dc"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>4GyJHrE3yKdko1su5IeO1Psf6sdPG4DCInxiXnlOUwnpUf+IyTbV61dOQ1fn74qP5WO2xsJ8ujtT&#13;
-YuPT2+zq8w==</DigestValue></Reference></SignedInfo><SignatureValue>Skpj/TSogrf5fNSMONHL7xYJ4WdoGq8rrial8UKZQfsWGfoUDwJTNb7XiAeUAQlK2lLgDPFq/5bH&#13;
-lTG9fpbCB5o9OSK9/cc9E5uuiJX2BX0UkJslECgRpCAqvJ6XxDfpYtZ/FwLc0xzDCkUfZC77dQEI&#13;
-tS/kZufiVNKLeEV5ndH8mVC/rLMq06Oml1OtMVxKaWDHzZPAAvoB1NqIbOV37Ek/FfF+81lZFzmT&#13;
-bYvIhBYrh9ywnS78WVcWE86apMD3d+FXvb9mlYw1WOtO1BhEFd5oHcoQ22fwCsx1dqeWK27p5cxa&#13;
-l073eiL5cuUzjIjpRUwZ/vWu3YKsK99CTE63cw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJavaFlex_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_559d7ebb-d442-4fca-862d-006638dac60b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7bVanJp6QXctjXDi4biGFuCBrtv0eA7dhedmqanMStjrqN3ZGAKS6JmZUX/rw9L2Z/bi4ZSbQjsA&#13;
+uhzKvlwEXg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_9f5d7274-e67d-4d39-9730-ad4812c36ef5"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wkX/dKhMQ5aU+QN5GgdID2yVvIasT+PnSXaZnRr8EUBk7sDXL0yFG8rXCzsXfz5zKAx1iKrnpL+8&#13;
+QjxYl6jRHw==</DigestValue></Reference></SignedInfo><SignatureValue>cmt2DwB6F2ZWe6z3DzdQb45QSF7uOjk3+yXGIgyz6EUPaw5SSUfe15PMl8bJNroG/Zv6s+USRjg7&#13;
+nESmHiREgi9jzHyokpZW5p4ZddFzkuQCZJaEP4zisqtPUiHbEF3KvwVxt8cBsVDMFlKzhhV2i7Dn&#13;
+BsRk9rTdyXDDGWDDskkZ+RPGFHhLPKrtlPsIxgFv/4n4Ra1IHEibSDj0AW1TgBxrEQcWK99IWVb7&#13;
+81K8dSgSUbji9NGarwnOLK6/S+zzXK6QSvv5j8Be+0Ru1yIpbNtXcQSgXfxibUW3uSPejMSTjmNU&#13;
+5mR0s2L1a/boFLe6kB/sK3Huvh082dduLg5NUw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -1285,4 +1321,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_904fef4e-21a2-4094-b7d2-992d6e3622dc" Target="#_b8c6be6b-a925-45b3-bfff-9b2a28be1528"><Timestamp>2023-12-18 09:36:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_9f5d7274-e67d-4d39-9730-ad4812c36ef5" Target="#_559d7ebb-d442-4fca-862d-006638dac60b"><Timestamp>2023-12-18 09:40:29</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
