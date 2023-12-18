@@ -272,6 +272,10 @@
     "version" : "Latest",
     "type" : "job"
   }, {
+    "id" : "_TNThwJ1tEe6D4KPAETp4vg",
+    "version" : "Latest",
+    "type" : "joblet"
+  }, {
     "id" : "DataOperation",
     "version" : "Latest",
     "type" : "routine"
