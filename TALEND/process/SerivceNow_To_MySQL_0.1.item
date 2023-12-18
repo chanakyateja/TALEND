@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="servicenow_url" prompt="servicenow_url?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="https://dev167092.service-now.com/"/>
-    <contextParameter comment="" name="servicenow_username" prompt="servicenow_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="admin"/>
-    <contextParameter comment="" name="servicenow_password" prompt="servicenow_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:oRVxUz/gCC9fkolXPmii+3i48x7qLle8+lL+79+mUmsBhjokezoUhg=="/>
-    <contextParameter comment="" name="servicenow_tablename" prompt="servicenow_tablename?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="u_customer_master"/>
-    <contextParameter comment="" name="mysql_host" prompt="mysql_host?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="127.0.0.1"/>
-    <contextParameter comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="3306"/>
-    <contextParameter comment="" name="mysql_username" prompt="mysql_username?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="root"/>
-    <contextParameter comment="" name="mysql_password" prompt="mysql_password?" promptNeeded="false" repositoryContextId="built-in" type="id_Password" value="enc:system.encryption.key.v1:6y4AJDTEzgLA3brmg9z0CyT0zAAc1dW5cFkaxh/SOBcF"/>
-    <contextParameter comment="" name="mysql_additionalparameters" prompt="mysql_additionalparameters?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="noDatetimeStringSync=true"/>
-    <contextParameter comment="" name="mysql_database" prompt="mysql_database?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="elcconsumermdm"/>
-    <contextParameter comment="" name="mysql_tablename" prompt="mysql_tablename?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="customer_master"/>
+    <contextParameter comment="" name="servicenow_url" prompt="servicenow_url?" promptNeeded="false" type="id_String" value="https://dev167092.service-now.com/"/>
+    <contextParameter comment="" name="servicenow_username" prompt="servicenow_username?" promptNeeded="false" type="id_String" value="admin"/>
+    <contextParameter comment="" name="servicenow_password" prompt="servicenow_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:gGy++1yJKg3jrrAOt0CF3pNYOA4iVmOjWGCkfDbYDw2HLEMnHB5iBg=="/>
+    <contextParameter comment="" name="servicenow_tablename" prompt="servicenow_tablename?" promptNeeded="false" type="id_String" value="u_customer_master"/>
+    <contextParameter comment="" name="mysql_host" prompt="mysql_host?" promptNeeded="false" type="id_String" value="127.0.0.1"/>
+    <contextParameter comment="" name="mysql_port" prompt="mysql_port?" promptNeeded="false" type="id_String" value="3306"/>
+    <contextParameter comment="" name="mysql_username" prompt="mysql_username?" promptNeeded="false" type="id_String" value="root"/>
+    <contextParameter comment="" name="mysql_password" prompt="mysql_password?" promptNeeded="false" type="id_Password" value="enc:system.encryption.key.v1:HmvjNqZT2Q5f6fyoI634E7wWPwGpPARflKnzM5nHh/mp"/>
+    <contextParameter comment="" name="mysql_additionalparameters" prompt="mysql_additionalparameters?" promptNeeded="false" type="id_String" value="noDatetimeStringSync=true"/>
+    <contextParameter comment="" name="mysql_database" prompt="mysql_database?" promptNeeded="false" type="id_String" value="elcconsumermdm"/>
+    <contextParameter comment="" name="mysql_tablename" prompt="mysql_tablename?" promptNeeded="false" type="id_String" value="customer_master"/>
   </context>
   <parameters>
     <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
@@ -55,7 +55,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:wk+LmnQMiAUeylyS4pTHMhSkXPnZ/cEblsl7wbyt"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:YPGH2yS7p2ByTPNIIagR54JiepXlQWbp+5Vw7Q4j"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -70,7 +70,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Chanakya_WorkSpace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;D:/Chanakya/My_WorkSpace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -90,7 +90,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:coOz4ojbVoR2joOMcL6gzljv+3T3rtm+mRm3+ZJm"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:aNqZesLCZOi25Mau90KR0ukgj2+PhNuT/0w/ggKg"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -109,12 +109,7 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
-    <routinesParameter id="_9dIOUEcaEe6nU8mlmeVQRQ" name="DQTechnical"/>
-    <routinesParameter id="_9cwa4EcaEe6nU8mlmeVQRQ" name="DataMasking"/>
     <routinesParameter id="_9btSAEcaEe6nU8mlmeVQRQ" name="DataOperation"/>
-    <routinesParameter id="_9c8BEEcaEe6nU8mlmeVQRQ" name="DataQualityDependencies"/>
-    <routinesParameter id="_9c2hgEcaEe6nU8mlmeVQRQ" name="DataQuality"/>
-    <routinesParameter id="_9dCHsEcaEe6nU8mlmeVQRQ" name="DqStringHandling"/>
     <routinesParameter id="_9dR_UEcaEe6nU8mlmeVQRQ" name="MDM"/>
     <routinesParameter id="_9byxkEcaEe6nU8mlmeVQRQ" name="Mathematical"/>
     <routinesParameter id="_9b44MEcaEe6nU8mlmeVQRQ" name="Numeric"/>
@@ -130,7 +125,7 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tServiceNowConnection_1"/>
     <elementParameter field="TEXT" name="SERVICENOWURL" value="context.servicenow_url"/>
     <elementParameter field="TEXT" name="USERNAME" value="context.servicenow_username"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:zfEg3yLNtyd6VUlMfEU97VARi+n2qJYgi3VW1mU/a8y99XcjkuBNwBUywdVXoMrVHfpR23VC2A=="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:FEJyTsh+WxQrR83RxX+1eKfJE+XQyHyP/mAn9VDLIudiHyOYPmST72CSOoRHG3pLut7usavz7w=="/>
     <elementParameter field="TEXT" name="LABEL" value="&lt;b&gt;ServiceNow_Connection&lt;/b&gt;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
@@ -147,7 +142,7 @@
     <elementParameter field="TEXT" name="DBNAME" value="context.mysql_database"/>
     <elementParameter field="TEXT" name="PROPERTIES" value="context.mysql_additionalparameters"/>
     <elementParameter field="TEXT" name="USER" value="context.mysql_username"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pof2L5a2X9aISc9QQFPKZgTLW6ejzcqzW7jgXoayRxv9vFZ1qsxEBQYswEVUO5U3Vx0="/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:W0K+/G4OAf8RxOSZiwrzS4N4jFFevkasEKIxviOMT8ptUpxOFRsE2U4l6X3xBpGQOgA="/>
     <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
     <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
     <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
@@ -207,7 +202,7 @@
     <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tServiceNowConnection_1"/>
     <elementParameter field="TEXT" name="SERVICENOWURL" show="false" value="&quot;https://myinstance.service-now.com/&quot;"/>
     <elementParameter field="TEXT" name="USERNAME" show="false" value="&quot;UserName&quot;"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:j8scEaWFu+P1W422uFGlwldoSI3HOdUvL2rlzkNRFVHOUbIuB40="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" show="false" value="enc:system.encryption.key.v1:1EaG53NoTTS9rVCqcgb9jQZgqipTyxtoOFWO4KZTdplNIW349+0="/>
     <elementParameter field="CLOSED_LIST" name="TABLENAME" value="custom_table"/>
     <elementParameter field="TEXT" name="CUSTOM_TABLE" value="context.servicenow_tablename"/>
     <elementParameter field="TABLE" name="CONDITIONS"/>
@@ -231,7 +226,7 @@
     <elementParameter field="TEXT" name="PORT" show="false" value="&quot;3306&quot;"/>
     <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:iU/IrCqMt1PzKe3pZvc964fEYN0MHyDOdGE1TSYY"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ioiUpyG2X3AI9Q6VKmkwcCrtgACBL4A9VWnmyoUV"/>
     <elementParameter field="DBTABLE" name="TABLE" value="context.mysql_tablename"/>
     <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="CREATE_IF_NOT_EXISTS"/>
     <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="INSERT"/>
@@ -370,13 +365,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_e34ad7a0-7858-48a7-b9d5-4e4cc0e9b5a2"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>TMuF7fIuIJxvD3Atb1gduoRggYoGX6eLODTnf3aGxD5eULj9WiG4FT11VtpUwhcPb07cs6Mjfv36&#13;
-WTfceRspMw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_5e8f445e-3265-4936-a912-af15236522f6"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>1uRWp/JYyDbn0EtD/YLnja7hl9WyjujPg952BUZaU7CzLF/BslWLEaXwDOyK2enEroXlixjpNz8H&#13;
-cJHyjbHBOA==</DigestValue></Reference></SignedInfo><SignatureValue>UGFLg0qbyXp7Mb/y4i1P2WSs7rvETLxPRdiHY/fF272wB1UNe6F8V7UWPLPB2xeokvVuTPoNHUbw&#13;
-Xo5hy6fgUmjy3PtXjexyV1uo0MrZ0NE+8VB7I3lNuwqPTSOXrnkpEwmLVnLBWmQZGR1wUwQd1Kkg&#13;
-3UpEnyU2EM9qMfy9qDnv27jvIom22dj+/C0TYzfwi4alREQ3Ih0Pkhh6vNUf1ZSffvFa1KWnB/0c&#13;
-S39j1wlJaMlfEDTR/EAPK4EyLLU2Fovr2C1KrsIWR/nIU1+tvxgzTu542BGvuBHSNvXnvKswk5Xr&#13;
-WbX7rU24aAfJDxkOaZMByZdn+fm68SttksfjmQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_35c27c49-d4b4-4c5a-b38d-4e5276b5c20b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>SlDyCcR9UxgKY8Ymlt59w4AZfGL/BR9f6uEOj8BTSHEsLsdmsMEVGYQvsCni2rV8Utr6XLC3IjLK&#13;
+gG7An0EBrg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b1cb3e1b-5bc3-4b56-b100-1fd7d7d732dd"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>X+4R0d0/2V6Yj/bMKkuQ5OnnOTCsIKAsO2WI42NoSVsueelK5DO1fRykY7TDvNlJLOAn0WIXIcQl&#13;
+0dV5GxTiZg==</DigestValue></Reference></SignedInfo><SignatureValue>BMWeLUiX5/eNoSG0e8uIIZYxckF5hDhddrakXe6q9uiDTM/xWwfvMFHa7z8SWemUVzNqv/26s/38&#13;
+wztwLxEVOHKzxfm2e9VzZeV4q8ie9z34JunuqVjSTHUajJKO+F2Z3BDwY8Oo5FJBUUKzAPaFxV+8&#13;
+2U3tdI493v5kt8sKyjJLDgG+9q+SdnWN/t3qK8MzW9xI86KOwCfVGg+kIgB3n9tXNgiyp6VV4y6f&#13;
+zrog0ylJUUKBkFCnYPpRQREEVHm0177imdzdZLKTjltHPjYSgeR3U9Mckezu+MKwrMR7AZUQn5K6&#13;
+8KR+z57DpPiv6juRisAcd1+clfgZwwbUrydZSw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -398,4 +393,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_5e8f445e-3265-4936-a912-af15236522f6" Target="#_e34ad7a0-7858-48a7-b9d5-4e4cc0e9b5a2"><Timestamp>2023-12-18 10:22:54</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b1cb3e1b-5bc3-4b56-b100-1fd7d7d732dd" Target="#_35c27c49-d4b4-4c5a-b38d-4e5276b5c20b"><Timestamp>2023-12-18 12:14:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
